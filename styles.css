@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans";
+}
+html {
+  scroll-behavior: smooth;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 10vh;
+  background-color: #fff;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+}
+
+/* menu con links del menu hamburguesa */
+.menu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 10vh;
+  width: 100%;
+  height: 100vh;
+  display: none; /* ****** */
+  background-color: aqua;
+  text-align: center;
+}
+.menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+.menu ul li a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.menu.active {
+  display: block;
+}
+.menu-toggle i {
+  font-size: 40px;
+  margin: 5px;
+  cursor: pointer;
+  color: #00aaad;
+  border: 3px solid #00aaad;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.logo img {
+  width: 150px;
+  margin: 5px;
+}
+
+.boton img {
+  position: fixed;
+  width: 70px;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  margin: 10px;
+  background: #fff;
+  border-radius: 50px;
+}
+
+/* section hero */
+#hero {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.section-info img {
+  width: 300px;
+  animation: logo 3s infinite ease;
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.numero-empresa {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+.numero-empresa h2 {
+  color: #00aaad;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.numero-empresa span {
+  color: #464646;
+  font-size: 24px;
+}
+
+/* seccion inicio */
+#inicio {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-image: url("img/fondo.jpg");
+  background-position: center center;
+  background-size: cover;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.inicio-info h2 {
+  font-size: 70px;
+  color: #fff;
+  font-weight: bold;
+}
+.inicio-info p {
+  font-size: 30px;
+  color: #fff;
+}
+
+/* ----- */
+/* seccion servicios */
+#servicios {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  flex-direction: column;
+}
+.servicios-info {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.servicios-info h2 {
+  font-size: 50px;
+  color: #00aaad;
+}
+/* ----- */
+/* cards */
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.card-item img {
+  margin: 10px;
+  border-radius: 5px;
+  justify-content: center;
+}
+.card-item p {
+  font-size: 22px;
+  color: #00aaad;
+}
