@@ -179,3 +179,90 @@ header {
   font-size: 22px;
   color: #00aaad;
 }
+
+/* seccion quienes somos */
+#quienesSomos {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background-color: #00aaad;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.quienes-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  gap: 30px;
+}
+.quienes-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 20px;
+  color: #fff;
+}
+.quienes-text h3 {
+  font-size: 30px;
+}
+
+/* ------ */
+/* seccion donde trabajamos */
+#dondeTrabajamos {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 30px;
+  justify-content: center;
+  text-align: center;
+  gap: 30px;
+}
+#dondeTrabajamos h2 {
+  color: #00aaad;
+}
+.donde-info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: #00aaad;
+}
+.donde-text {
+  color: #fff;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* ---- */
+
+/* sección contacto */
+#contacto {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  text-align: center;
+}
+.contacto-info {
+  display: flex;
+}
+.contacto-info h2 {
+  color: #00aaad;
+  font-size: 30px;
+}
+
+/* ---- */
+
+footer {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+  background-color: #00aaad;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
